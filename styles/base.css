@@ -1,0 +1,213 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+h1 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+nav {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  background-color: darkgray;
+}
+
+/* Container for About Me */
+.container-left-inner {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center text horizontally */
+}
+
+/* About Me heading */
+.container-left h2 {
+  font-size: 24px;
+  margin-top: 0; /* Remove top margin */
+  text-align: center; /* Center the text */
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Optional: adds some space between the heading and the paragraph */
+}
+
+/* Content styling inside About Me */
+.container-left .content {
+  display: flex;
+  justify-content: center; /* Centers the content inside the container */
+  align-items: center; /* Centers vertically */
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+
+/* Paragraph Styling inside About Me */
+.container-left .content p {
+  color: #555;
+  line-height: 1.6;
+  text-align: center; /* Optional: center the text inside the paragraph */
+}
+
+/* Wrapper for layout of left and right containers */
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 20px;
+  flex-wrap: wrap; /* Ensure it stacks on smaller screens */
+}
+
+/* Left Container Styling with Inner Container */
+.container-left {
+  flex: 0 1 60%; /* Take 60% of the space */
+}
+
+.container-left-inner {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.container-left h2 {
+  display: flex;
+  font-size: 24px;
+  margin-top: 0; /* Remove the top margin */
+  text-align: left;
+  background-color: rgb(23, 23, 75); /* Blue background for About Me heading */
+  color: white;
+  padding: 10px; /* Padding to give space inside the heading */
+  border: 2px solid #000; /* Border around the heading */
+  border-radius: 5px; /* Slight rounding of corners */
+}
+
+.container-left p {
+  color: #333;
+  line-height: 1.6;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+/* Right Container Styling (Web Dev Resources) */
+.container-right {
+  flex: 0 1 35%; /* Take 35% of the space */
+  background-color: white;
+  color: black;
+  border: 2px solid #000;
+  padding: 20px;
+}
+
+.container-right h2 {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  border-radius: 5%;
+  text-align: center;
+  margin-top: 0; /* Remove margin to make it flush against the About Me section */
+}
+
+.container-right ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+.container-right ul li {
+  margin: 8px 0;
+}
+
+/* Flex layout for the content in "About Me" */
+.content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+
+.content img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.content p {
+  flex: 1;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Styling for the Abeokuta section */
+.abeokuta-section {
+  margin-top: 20px;
+}
+
+.abeokuta-section h1 {
+  text-align: center;
+  font-size: 22px;
+  color: darkblue;
+}
+
+.abeokuta-section hr {
+  border: none;
+  border-top: 2px solid darkblue;
+  width: 50%;
+  margin: 10px auto;
+}
+
+.abeokuta-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.abeokuta-content img {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+.abeokuta-content p {
+  flex: 1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+  background-color: rgb(25, 25, 72);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.5;
+}
