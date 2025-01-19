@@ -1,15 +1,10 @@
-// Get the current date
-const dateElement = document.getElementById('date');
-const today = new Date();
+// Footer Script
+const footerText = document.getElementById("footer-text");
 
-// Format the date as "Month Day, Year" (e.g., January 11, 2025)
-const formattedDate = today.toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric'
-});
+// Get current year and last modified date
+const currentYear = new Date().getFullYear();
+const lastModified = document.lastModified;
 
-// Display the formatted date in the specified element
-if (dateElement) {
-  dateElement.textContent = formattedDate;
-}
+// Update footer content dynamically
+footerText.innerHTML = `&copy; ${currentYear} Temple Album | Last Modified: ${lastModified}`;
+
