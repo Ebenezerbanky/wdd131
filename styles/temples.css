@@ -1,3 +1,14 @@
+/* Root variables for global use */
+:root {
+  --primary-color: #3498db; /* Blue */
+  --secondary-color: #2ecc71; /* Green */
+  --font-family: Arial, sans-serif;
+  --font-size: 16px;
+  --header-bg-color: #f8f9fa;
+  --nav-menu-bg-color: #ffffff;
+  --hover-color: #ddd;
+}
+
 header {
   display: flex;
   justify-content: space-between; /* h1 to the left, nav to the right */
