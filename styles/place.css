@@ -1,0 +1,113 @@
+:root {
+    --primary-red: #CC0033;
+    --primary-green: #007B48;
+    --box-bg: #FFFFFF;
+    --text-color: #FFFFFF;
+    --box-text: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-red);
+    color: var(--text-color);
+}
+
+.header {
+    background-color: var(--primary-red);
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+.green-stripe {
+    background-color: var(--primary-green);
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    margin-top: -300px; /* Adjust this value based on your needs */
+}
+
+.info-box {
+    background: var(--box-bg);
+    padding: 20px;
+    border-radius: 5px;
+    flex: 1;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    background: var(--primary-green);
+    color: var(--text-color);
+    margin: -20px -20px 20px -20px;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+}
+
+.data-grid p, .weather-grid p {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--box-text);
+}
+
+.data-grid span:first-child, .weather-grid span:first-child {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.footer {
+    background-color: var(--primary-red);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .info-box {
+        width: 100%;
+        max-width: 400px;
+    }
+}
