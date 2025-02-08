@@ -1,13 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Get current count from localStorage or start at 0
-    let reviewCount = parseInt(localStorage.getItem('reviewCount') || '0');
+    let reviewCount = parseInt(localStorage.getItem('reviewCount') || 0);
     
-    // Increment the count
+    // Increment count
     reviewCount++;
     
-    // Update localStorage
-    localStorage.setItem('reviewCount', reviewCount.toString());
+    // Save back to localStorage
+    localStorage.setItem('reviewCount', reviewCount);
     
-    // Update the display
+    // Update display
     document.getElementById('reviewCount').textContent = reviewCount;
+
+    // Update footer information
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = document.lastModified;
 });
