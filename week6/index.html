@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebenezer - Photography Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+    <!-- Header with Navigation Bar -->
+    <header>
+        <div class="logo">Alina Lee</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Bankole Ebenezer</h1>
+        <p>Photographer & Film Maker, Nigeria</p>
+        <a href="#contact" class="btn">Hire Me</a>
+    </section>
+
+    <!-- Portfolio Section with Categories -->
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+
+        <h3>Landscape Photography</h3>
+        <div class="gallery">
+            <img src="images/pexels-photo-3345729.jpeg" alt="Landscape 1" onclick="openLightbox(this)">
+            <img src="images/image.png" alt="Landscape 2" onclick="openLightbox(this)">
+            <img src="images/image copy.png " alt="Landscape 3" onclick="openLightbox(this)">
+        </div>
+
+        <h3>Portrait Photography</h3>
+        <div class="gallery">
+            <img src="images/pexels-photo-3345729.jpeg" alt="Portrait 1" onclick="openLightbox(this)">
+            <img src="images/image copy 2.png" alt="Portrait 2" onclick="openLightbox(this)">
+            <img src="images/image copy 2.png" alt="Portrait 3" onclick="openLightbox(this)">
+        </div>
+
+        <h3>Street Photography</h3>
+        <div class="gallery">
+            <img src="images/image copy 2.png" alt="Street 1" onclick="openLightbox(this)">
+            <img src="images/image copy 2.png" alt="Street 2" onclick="openLightbox(this)">
+            <img src="images/image copy 2.png" alt="Street 3" onclick="openLightbox(this)">
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img id="lightbox-img">
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate photographer based in Los Angeles...</p>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
