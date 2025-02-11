@@ -32,12 +32,12 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
     console.log('Saved Form Data:', JSON.parse(savedData));
   }
   
-  // Example of using template literals
-  const user = { name: 'John Doe', age: 30 };
-  const userInfo = User: ${user.name}, Age: ${user.age};
-  console.log(userInfo);
-  
-  // Example of using arrays and array methods
-  const numbers = [1, 2, 3, 4, 5];
-  const doubled = numbers.map(num => num * 2);
-  console.log('Doubled Numbers:', doubled);
+// Example of using template literals
+const user = { name: 'John Doe', age: 30 };
+const userInfo = `User: ${user.name}, Age: ${user.age}`;  // Note the backticks here
+console.log(userInfo);
+
+// Example of using arrays and array methods
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(num => num * 2);
+console.log('Doubled Numbers:', doubled);
